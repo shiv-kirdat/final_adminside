@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#585858</color>
+    <color name="yellow">#FFC107</color>
+    <color name="colorPrimaryDark">#332e2e</color> <!--#FFA000-->
+    <color name="lightgreen">#51ef7d</color>
+    <color name="colorAccent">#03DAC5</color> <!--#fcfcfc-->
+    <color name="lightpinkcolor">#e5676b</color>
+    <color name="lightgrayline">#ededed</color>
+    <color name="deeppurple">#727aec</color>
+    <color name="materialyello">#ffb300</color>
+    <color name="materialgreen">#00bfa5</color>
+    <color name="pinkaccent">#f3863b</color>
+    <color name="peach">#e0876a</color>
+</resources>

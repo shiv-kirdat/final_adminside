@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_project"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Project"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_create_black_24dp"
+        android:gravity="center"
+        android:hint="Project Name" />
+
+    <EditText
+        android:id="@+id/project_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_description_black_24dp"
+        android:gravity="center"
+        android:hint="Project Description" />
+
+    <EditText
+        android:id="@+id/project_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:gravity="center"
+        android:hint="Project Date" />
+
+    <EditText
+        android:id="@+id/project_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_place_black_24dp"
+        android:gravity="center"
+        android:hint="Project Place" />
+
+    <Button
+        android:id="@+id/btnprojectsave"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/submit_button"
+        android:text="Save"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/btnprojectimage"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/submit_button"
+        android:text="Add Image"
+        android:textSize="22dp" />
+
+
+</LinearLayout>
