@@ -6,19 +6,36 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false">
-        <activity android:name=".eventrecycler" android:parentActivityName=".cardmainmenu" />
-        <activity android:name=".projectrecycler" android:parentActivityName=".cardmainmenu" />
-        <activity android:name=".Event_upload_image" android:parentActivityName=".add_event" />
-        <activity android:name=".add_event" android:parentActivityName=".cardmainmenu" />
-        <activity android:name=".Project_upload_image" android:parentActivityName=".create_project" />
-        <activity android:name=".create_project" android:parentActivityName=".cardmainmenu" />
+        android:theme="@style/AppTheme">
+        <activity android:name=".donorrecycler"
+            android:parentActivityName=".cardmainmenu" />
+        <activity
+            android:name=".feedbackrecycler"
+            android:parentActivityName=".cardmainmenu" />
+        <activity
+            android:name=".eventrecycler"
+            android:parentActivityName=".cardmainmenu" />
+        <activity
+            android:name=".projectrecycler"
+            android:parentActivityName=".cardmainmenu" />
+        <activity
+            android:name=".Event_upload_image"
+            android:parentActivityName=".add_event" />
+        <activity
+            android:name=".add_event"
+            android:parentActivityName=".cardmainmenu" />
+        <activity
+            android:name=".Project_upload_image"
+            android:parentActivityName=".create_project" />
+        <activity
+            android:name=".create_project"
+            android:parentActivityName=".cardmainmenu" />
         <activity android:name=".cardmainmenu" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -35,4 +35,14 @@ public class cardmainmenu extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), eventrecycler.class);
         startActivity(intent);
     }
+
+    public void viewfeedback(View view) {
+        Intent intent = new Intent(getApplicationContext(), feedbackrecycler.class);
+        startActivity(intent);
+    }
+
+    public void viewdonor(View view) {
+        Intent intent = new Intent(getApplicationContext(), donorrecycler.class);
+        startActivity(intent);
+    }
 }

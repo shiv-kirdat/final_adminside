@@ -3,6 +3,7 @@ package com.example.final_adminside;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,9 +19,6 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewHol
         super(options);
     }
 
-    public interface OnItemClickListener {
-        void onDeleteClick(int position);
-    }
 
     @Override
     protected void onBindViewHolder(@NonNull myviewHolder holder, int position, @NonNull model model) {
@@ -37,14 +35,21 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewHol
 
     class myviewHolder extends RecyclerView.ViewHolder {
         TextView e_name;
-        ImageView deleteimg;
+        //ImageView deleteimg;
 
-        public myviewHolder(@NonNull View itemView) {
+        public myviewHolder(@NonNull  View itemView) {
             super(itemView);
 
             e_name = (TextView) itemView.findViewById(R.id.eventname);
 
-            deleteimg = (ImageView) itemView.findViewById(R.id.delete);
+            /*deleteimg = (ImageView) itemView.findViewById(R.id.delete);
+
+
+            deleteimg.setOnClickListener(new View.OnClickListener(){
+                   public void onClick(View v){
+
+                   }
+            });*/
 
         }
     }

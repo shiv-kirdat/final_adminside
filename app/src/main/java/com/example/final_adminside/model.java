@@ -19,4 +19,6 @@ public class model {
     public void setE_name(String e_name) {
         this.e_name = e_name;
     }
+
+
 }

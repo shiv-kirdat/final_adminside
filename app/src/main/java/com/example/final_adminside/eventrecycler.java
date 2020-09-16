@@ -14,6 +14,7 @@ public class eventrecycler extends AppCompatActivity {
     RecyclerView recview;
     myadapter adapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,10 @@ public class eventrecycler extends AppCompatActivity {
 
         adapter = new myadapter(options);
         recview.setAdapter(adapter);
+
+
+
+
     }
 
     @Override
