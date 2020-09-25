@@ -2,32 +2,41 @@ package com.example.final_adminside;
 
 public class donormodel {
 
-    String name2, amount, emil2, msg2;
+    String name2, emil2, msg2;
 
     public donormodel(){
 
     }
 
-    public donormodel(String donor_name, String amount) {
-        this.name2 = donor_name;
-        this.amount = amount;
+    public donormodel(String name2, String emil2, String msg2) {
+        this.name2 = name2;
+        this.emil2 = emil2;
+        this.msg2 = msg2;
 
 
     }
 
-    public String getDonor_name() {
+    public String getName2() {
         return name2;
     }
 
-    public void setDonor_name(String donor_name) {
-        this.name2 = donor_name;
+    public void setName2(String name2) {
+        this.name2 = name2;
     }
 
-    public String getAmount() {
-        return amount;
+    public String getEmil2() {
+        return emil2;
     }
 
-    public void setAmount(String amount) {
-        this.amount = amount;
+    public void setEmil2(String emil2) {
+        this.emil2 = emil2;
+    }
+
+    public String getMsg2() {
+        return msg2;
+    }
+
+    public void setMsg2(String msg2) {
+        this.msg2 = msg2;
     }
 }

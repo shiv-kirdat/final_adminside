@@ -7,33 +7,33 @@ public class feedmodel {
 
     }
 
-    public feedmodel(String name, String msg, String mail) {
-        this.name2 = name;
-        this.emil2 = msg;
-        this.msg2 = mail;
+    public feedmodel(String name2, String msg2, String mail2) {
+        this.name2 = name2;
+        this.emil2 = msg2;
+        this.msg2 = mail2;
     }
 
-    public void setName(String name) {
-        this.name2 = name;
-    }
-
-    public void setMsg(String msg) {
-        this.msg2 = msg;
-    }
-
-    public void setMail(String mail) {
-        this.emil2 = mail;
-    }
-
-    public String getName() {
+    public String getName2() {
         return name2;
     }
 
-    public String getMsg() {
+    public void setName2(String name2) {
+        this.name2 = name2;
+    }
+
+    public String getEmil2() {
+        return emil2;
+    }
+
+    public void setEmil2(String emil2) {
+        this.emil2 = emil2;
+    }
+
+    public String getMsg2() {
         return msg2;
     }
 
-    public String getMail() {
-        return emil2;
+    public void setMsg2(String msg2) {
+        this.msg2 = msg2;
     }
 }

@@ -21,7 +21,7 @@ public class donorrecycler extends AppCompatActivity {
         getSupportActionBar().setTitle("View Donor");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
-        donorrecview=(RecyclerView) findViewById(R.id.feedrecyclerview);
+        donorrecview=(RecyclerView) findViewById(R.id.donorrecyclerview);
         donorrecview.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<donormodel> options= new FirebaseRecyclerOptions.Builder<donormodel>()

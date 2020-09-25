@@ -20,8 +20,10 @@ public class donoradapter extends FirebaseRecyclerAdapter<donormodel,donoradapte
 
     @Override
     protected void onBindViewHolder(@NonNull myviewHolder holder, int position, @NonNull donormodel model) {
-        holder.donor_name.setText(model.getDonor_name());
-        holder.donorpaid.setText(model.getAmount());
+        holder.name2.setText(model.getName2());
+        holder.msg2.setText(model.getMsg2());
+        holder.emil2.setText(model.getEmil2());
+        //holder.donorpaid.setText(model.getAmount());
 
 
     }
@@ -35,14 +37,16 @@ public class donoradapter extends FirebaseRecyclerAdapter<donormodel,donoradapte
     }
 
     class myviewHolder extends RecyclerView.ViewHolder {
-        TextView donor_name, donorpaid;
+        TextView name2, msg2, emil2;
 
 
         public myviewHolder(@NonNull View itemView) {
             super(itemView);
 
-            donor_name = (TextView) itemView.findViewById(R.id.donorname);
-            donorpaid = (TextView) itemView.findViewById(R.id.donorpaid);
+            name2 = (TextView) itemView.findViewById(R.id.donorname);
+            msg2 = (TextView) itemView.findViewById(R.id.donorpaid);
+            emil2 = (TextView) itemView.findViewById(R.id.donormail);
+            //donorpaid = (TextView) itemView.findViewById(R.id.donorpaid);
 
 
         }

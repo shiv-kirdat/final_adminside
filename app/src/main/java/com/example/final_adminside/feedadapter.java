@@ -14,16 +14,15 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 public class feedadapter extends FirebaseRecyclerAdapter<feedmodel,feedadapter.myviewHolder> {
 
     public feedadapter(@NonNull FirebaseRecyclerOptions<feedmodel> options) {
-
-        super(options);
+           super(options);
     }
 
 
     @Override
     protected void onBindViewHolder(@NonNull myviewHolder holder, int position, @NonNull feedmodel model) {
-        holder.name2.setText(model.getName());
-        holder.emil2.setText(model.getMail());
-        holder.msg2.setText(model.getMsg());
+        holder.name2.setText(model.getName2());
+        holder.emil2.setText(model.getEmil2());
+        holder.msg2.setText(model.getMsg2());
 
     }
 

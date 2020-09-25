@@ -35,21 +35,13 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewHol
 
     class myviewHolder extends RecyclerView.ViewHolder {
         TextView e_name;
-        //ImageView deleteimg;
+
 
         public myviewHolder(@NonNull  View itemView) {
             super(itemView);
 
             e_name = (TextView) itemView.findViewById(R.id.eventname);
 
-            /*deleteimg = (ImageView) itemView.findViewById(R.id.delete);
-
-
-            deleteimg.setOnClickListener(new View.OnClickListener(){
-                   public void onClick(View v){
-
-                   }
-            });*/
 
         }
     }
