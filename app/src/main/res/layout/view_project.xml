@@ -28,10 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Project Name"
-        android:id="@+id/ename"
+        android:id="@+id/pname"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,6 +38,7 @@
         android:id="@+id/pdesc"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
+
 
     <EditText
         android:layout_width="match_parent"

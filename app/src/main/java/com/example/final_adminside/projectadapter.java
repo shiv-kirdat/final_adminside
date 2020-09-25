@@ -49,7 +49,7 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
                 View myview=dialogPlus.getHolderView();
 
                 final EditText name=myview.findViewById(R.id.pname);
-                final EditText desc=myview.findViewById(R.id.pdesc);
+                //final EditText desc=myview.findViewById(R.id.pdesc);
                 final EditText date=myview.findViewById(R.id.pdate);
                 final EditText id=myview.findViewById(R.id.pid);
                 final EditText place=myview.findViewById(R.id.place);
@@ -57,7 +57,7 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
 
                 name.setText(model.getProjectname());
                 id.setText(model.getProjectid());
-                desc.setText(model.getProjectdesc());
+               //desc.setText(model.getProjectdesc());
                 date.setText(model.getProjectdate());
                 place.setText(model.getProjectplace());
 
@@ -82,7 +82,7 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
                 View myview=dialogPlus.getHolderView();
 
                 final EditText name=myview.findViewById(R.id.pname);
-                final EditText desc=myview.findViewById(R.id.pdesc);
+               // final EditText desc=myview.findViewById(R.id.pdesc);
                 final EditText date=myview.findViewById(R.id.pdate);
                 final EditText id=myview.findViewById(R.id.pid);
                 final EditText place=myview.findViewById(R.id.place);
@@ -91,7 +91,7 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
 
                 name.setText(model.getProjectname());
                 id.setText(model.getProjectid());
-                desc.setText(model.getProjectdesc());
+               // desc.setText(model.getProjectdesc());
                 date.setText(model.getProjectdate());
                 place.setText(model.getProjectplace());
 
@@ -103,7 +103,7 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
                         Map<String,Object> map=new HashMap<>();
                         map.put("projectid",id.getText().toString());
                         map.put("projectname",name.getText().toString());
-                        map.put("projectdescription",desc.getText().toString());
+                   //     map.put("projectdescription",desc.getText().toString());
                         map.put("projectdate",date.getText().toString());
                         map.put("projectplace",place.getText().toString());
 
@@ -178,9 +178,9 @@ public class projectadapter extends FirebaseRecyclerAdapter<projectmodel,project
 
             projectname = (TextView) itemView.findViewById(R.id.projectname);
 
+            viewproject=(ImageView)itemView.findViewById(R.id.viewicon);
             edit=(ImageView)itemView.findViewById(R.id.editicon);
             delete=(ImageView)itemView.findViewById(R.id.deleteicon);
-            viewproject=(ImageView)itemView.findViewById(R.id.viewicon);
 
 
         }
